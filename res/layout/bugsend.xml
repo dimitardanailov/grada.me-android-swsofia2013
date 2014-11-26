@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".GradaMainActivity" >
+    
+    <include
+        android:id="@+id/headerMenu"
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/header" />
+        
+	    <RelativeLayout
+	        android:id="@+id/body" 
+	        android:layout_below="@+id/headerMenu"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp">
+	
+	        <TextView 
+	            android:id="@+id/titleMap"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="18sp"
+	            android:text="Липсващ капак на шахта"
+	            android:layout_centerHorizontal="true"
+	            android:textStyle="bold"/>
+	        
+	        <ImageView 
+	            android:layout_below="@+id/titleMap"
+	            android:id="@+id/googleMap"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:background="@drawable/map"
+	            android:layout_marginTop="10dp"/>
+	        
+	        <EditText 
+	            android:layout_below="@+id/googleMap"
+	            android:id="@+id/gpsLocation"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:hint="Моля въведете коректен адрес"/>
+	                
+    </RelativeLayout>
+    
+	<RelativeLayout 
+	    android:layout_alignParentBottom="true"
+	    android:layout_below="@+id/body"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+	    <Button
+	        android:id="@+id/saveBug"
+	        android:textColor="#fff"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:background="#eb6b56"
+	        android:paddingBottom="12dp"
+	        android:paddingTop="12dp"
+	        android:textStyle="bold"
+	        android:text="Изпрати" />
+	    
+	</RelativeLayout>
+</RelativeLayout>

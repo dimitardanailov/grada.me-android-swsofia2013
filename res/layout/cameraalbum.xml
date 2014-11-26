@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".GradaMainActivity" >
+    
+    <include
+        android:id="@+id/headerMenu"
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/header" />
+    
+    <RelativeLayout 
+        android:layout_below="@id/headerMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        
+        <Button 
+			android:id="@+id/cameraListener"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerHorizontal="true"
+        	android:background="@android:color/transparent"
+        	android:drawableTop="@drawable/camerabutton"/>
+        
+        
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

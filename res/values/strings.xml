@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="app_name">Grada.me</string>
+    <string name="city">Grada</string>
+    <string name="me">.me</string>
+    <string name="action_settings">Настройки</string>
+    <string name="grada_slogon_1">Градът има нужда от теб.</string>
+    <string name="grada_slogon_2">Сигнализирай за проблемите</string>
+    <string name="grada_slogon_3">Около теб</string>
+    
+    <string name="login_with_label">ВЛЕЗ С</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="login_anonymous"></string>
+    
+</resources>

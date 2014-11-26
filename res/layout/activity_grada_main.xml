@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".GradaMainActivity" >
+    
+    
+    <RelativeLayout 
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/indexlogo">
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/homefooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp">
+        
+        <Button
+            android:id="@+id/facebookLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableBottom="@drawable/fbbutton"/>
+        
+        <Button
+            android:id="@+id/googlePlusLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/facebookLogin"
+            android:background="@android:color/transparent"
+            android:drawableBottom="@drawable/googlebutton"
+            android:layout_marginTop="-15dp"/>
+        
+        <Button
+            android:id="@+id/anonimousButton"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/googlePlusLogin"
+            android:background="@android:color/transparent"
+            android:drawableBottom="@drawable/anonimousbutton"
+            android:layout_marginTop="-15dp"/>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

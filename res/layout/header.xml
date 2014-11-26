@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#eb6b56"
+    android:paddingTop="15dp"
+    android:paddingBottom="0dp">
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+        
+	    <ImageView
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginTop="5dp"
+	        android:id="@+id/dots"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:contentDescription="dots"
+	        android:background="@drawable/dotsicon"/>
+	
+	
+	    <ImageView 
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@id/dots"
+	        android:id="@+id/headerBrandName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:contentDescription="logowhite"
+	        android:background="@drawable/logowhite"/>
+	</RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+	    
+        <Button
+            android:layout_marginTop="5dp"
+			android:id="@+id/headerButtonAddBug"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center_vertical"
+        	android:background="@android:color/transparent"
+        	android:drawableTop="@drawable/plusicon" />
+        
+    </RelativeLayout>
+    
+	
+    
+</RelativeLayout>
